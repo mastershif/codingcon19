@@ -1,14 +1,18 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
 
 // components
 import Navbar from "./components/Navbar";
+import SpeakerGrid from "./components/SpeakerGrid";
+import SpeakersData from "./components/SpeakersData";
 
-class App extends Component {
-  render() {
+const App = () => {
+  const speakers = SpeakersData;
+
     return (
       <Container>
         <Navbar />
+        <SpeakerGrid speakers={speakers}/>
         {/* <Logo />
         <Banner />
         <TalkDetales />
@@ -17,7 +21,6 @@ class App extends Component {
         <Footer /> */}
       </Container>
     );
-  }
 }
 
 export default App;
