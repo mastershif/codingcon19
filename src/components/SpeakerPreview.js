@@ -6,9 +6,9 @@ const SpeakerPreview = ({speaker}) => {
 
     return (
         <SpeakerDetailsLink key={id}>
-            <img src={image} alt="speaker"/>
-            <h2>{first_name}</h2><h2>{last_name}</h2>
-            <h3>{title}</h3>
+            <SpeakerImage src={image} alt="speaker"/>
+            <h3>{first_name + " " + last_name}</h3>
+            <h4>{title}</h4>
         </SpeakerDetailsLink>
     )
 };
@@ -16,7 +16,13 @@ const SpeakerPreview = ({speaker}) => {
 const SpeakerDetailsLink = styled.a`
   display: block;
   text-decoration: none;
-  margin-bottom: 25px;
+  margin: 1em;
+  text-align: left;
+`;
+
+const SpeakerImage = styled.img`
+  width: 40%;
+  height: auto;
 `;
 
 export default SpeakerPreview;

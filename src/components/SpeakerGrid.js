@@ -11,11 +11,13 @@ const SpeakerGrid = ({ speakers }) => {
 };
 
 const SpeakerGridContainer = styled.div`
-  width: 100%;
-  display: flex;  
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 5em;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  box-sizing: border-box;
+  column-gap: 1em;
+  row-gap: 1em;
 `;
 
 export default SpeakerGrid;
