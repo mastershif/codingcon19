@@ -10,7 +10,7 @@ class Navbar extends Component {
     return (
       <Container>
         <Menu>
-          <MenuItem>CodingCon19</MenuItem>
+          <MenuItem><MenuItemLink to="/">CodingCon19</MenuItemLink></MenuItem>
           <MenuItem><MenuItemLink to="/about">About</MenuItemLink></MenuItem>
           <MenuItem><MenuItemLink to="/schedule">Schedule</MenuItemLink></MenuItem>
           <MenuItem><MenuItemLink to="/speakers">Speakers</MenuItemLink></MenuItem>
