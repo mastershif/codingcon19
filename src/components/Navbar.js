@@ -17,7 +17,7 @@ class Navbar extends Component {
           <MenuItem>About</MenuItem>
           <MenuItem>Schedule</MenuItem>
           <MenuItem>Speakers</MenuItem>
-          <MenuItem><Link to="/sessions">Sessions</Link></MenuItem>
+          <MenuItem><MenuItemLink to="/sessions">Sessions</MenuItemLink></MenuItem>
           <MenuItem>Sponsors</MenuItem>
         </Menu>
       </Container>
@@ -40,6 +40,14 @@ const Menu = styled.ul`
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+`;
+const MenuItemLink = styled(Link)`
+    text-decoration: none;
+    color: inherit;
+
+    &:focus, &:hover, &:visited, &:link, &:active {
+        text-decoration: none;
+    }
 `;
 const MenuItem = styled.li`
   padding: 1em;
