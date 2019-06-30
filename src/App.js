@@ -2,24 +2,23 @@ import React from "react";
 import styled from "styled-components";
 
 // components
+import Home from "./components/pages/Home";
 import Navbar from "./components/Navbar";
 import SpeakerGrid from "./components/SpeakerGrid";
 import SpeakersData from "./components/SpeakersData";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import Sessions from "./components/pages/Sessions";
 
 const App = () => {
-  const speakers = SpeakersData;
-
     return (
-      <Container>
-        <Navbar />
-        <SpeakerGrid speakers={speakers}/>
-        {/* <Logo />
-        <Banner />
-        <TalkDetales />
-        <Map />
-        <Sponsors />
-        <Footer /> */}
-      </Container>
+      <Router>
+        <Container>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/sessions" exact component={Sessions} />
+          </Switch>
+        </Container>
+      </Router>
     );
 }
 

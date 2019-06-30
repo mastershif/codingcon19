@@ -1,7 +1,11 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 // components
+import Sessions from "./pages/Sessions";
+import App from "../App";
+import Home from "./pages/Home";
 // import Button from "./common/Button";
 
 class Navbar extends Component {
@@ -13,7 +17,7 @@ class Navbar extends Component {
           <MenuItem>About</MenuItem>
           <MenuItem>Schedule</MenuItem>
           <MenuItem>Speakers</MenuItem>
-          <MenuItem>Sessions</MenuItem>
+          <MenuItem><Link to="/sessions">Sessions</Link></MenuItem>
           <MenuItem>Sponsors</MenuItem>
         </Menu>
       </Container>
