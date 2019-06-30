@@ -3,9 +3,6 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 // components
-import Sessions from "./pages/Sessions";
-import App from "../App";
-import Home from "./pages/Home";
 // import Button from "./common/Button";
 
 class Navbar extends Component {
@@ -14,11 +11,11 @@ class Navbar extends Component {
       <Container>
         <Menu>
           <MenuItem>CodingCon19</MenuItem>
-          <MenuItem>About</MenuItem>
-          <MenuItem>Schedule</MenuItem>
-          <MenuItem>Speakers</MenuItem>
+          <MenuItem><MenuItemLink to="/about">About</MenuItemLink></MenuItem>
+          <MenuItem><MenuItemLink to="/schedule">Schedule</MenuItemLink></MenuItem>
+          <MenuItem><MenuItemLink to="/speakers">Speakers</MenuItemLink></MenuItem>
           <MenuItem><MenuItemLink to="/sessions">Sessions</MenuItemLink></MenuItem>
-          <MenuItem>Sponsors</MenuItem>
+          <MenuItem><MenuItemLink to="/sponsors">Sponsors</MenuItemLink></MenuItem>
         </Menu>
       </Container>
     );

@@ -2,12 +2,13 @@ import React from "react";
 import styled from "styled-components";
 
 // components
-import Home from "./components/pages/Home";
-import Navbar from "./components/Navbar";
-import SpeakerGrid from "./components/SpeakerGrid";
-import SpeakersData from "./components/SpeakersData";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import Home from "./components/pages/Home";
+import About from "./components/pages/About";
+import Schedule from "./components/pages/Schedule";
+import Speakers from "./components/pages/Speakers";
 import Sessions from "./components/pages/Sessions";
+import Sponsors from "./components/pages/Sponsors";
 
 const App = () => {
     return (
@@ -15,7 +16,11 @@ const App = () => {
         <Container>
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route path="/about" exact component={About} />
+            <Route path="/schedule" exact component={Schedule} />
+            <Route path="/speakers" exact component={Speakers} />
             <Route path="/sessions" exact component={Sessions} />
+            <Route path="/sponsors" exact component={Sponsors} />
           </Switch>
         </Container>
       </Router>
