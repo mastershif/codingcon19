@@ -14,6 +14,7 @@ const SpeakerGridContainer = styled.div`
   width: 90%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
   padding: 5em;
   flex-wrap: wrap;
   column-gap: 1em;

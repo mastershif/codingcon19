@@ -2,22 +2,23 @@ import SpeakersData from "../SpeakersData";
 import Navbar from "../Navbar";
 import SpeakerGrid from "../SpeakerGrid";
 import React from "react";
+import styled from "styled-components";
 
 const Home = () => {
   const speakers = SpeakersData;
 
   return (
-    <>
-      <Navbar />
-      <SpeakerGrid speakers={speakers}/>
+      <>
+        <SpeakerGrid speakers={speakers}/>
         {/*<Logo />
         <Banner />
         <TalkDetales />
         <Map />
-        <Sponsors />
-        <Footer /> */}
-    </>
+        <Sponsors /> */}
+        </>
   );
 }
 
 export default Home;
+
+

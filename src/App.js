@@ -9,11 +9,15 @@ import Schedule from "./components/pages/Schedule";
 import Speakers from "./components/pages/Speakers";
 import Sessions from "./components/pages/Sessions";
 import Sponsors from "./components/pages/Sponsors";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 const App = () => {
     return (
       <Router>
         <Container>
+            <Content>
+                <Navbar />
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/about" exact component={About} />
@@ -22,6 +26,10 @@ const App = () => {
             <Route path="/sessions" exact component={Sessions} />
             <Route path="/sponsors" exact component={Sponsors} />
           </Switch>
+            </Content>
+            <FooterWrapper>
+                <Footer />
+            </FooterWrapper>
         </Container>
       </Router>
     );
@@ -35,4 +43,10 @@ const Container = styled.div`
   background: #e0e0e0;
   display: flex;
   flex-direction: column;
+`;
+const Content = styled.div`
+   flex: 1 0 auto;
+`;
+const FooterWrapper = styled.div`
+  flex-shrink: 0;
 `;
