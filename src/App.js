@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+import "./App.css";
 
 // components
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 import Schedule from "./components/pages/Schedule";
@@ -13,11 +14,11 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 
 const App = () => {
-    return (
-      <Router>
-        <Container>
-            <Content>
-                <Navbar />
+  return (
+    <Router>
+      <Container>
+        <Content>
+          <Navbar />
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/about" exact component={About} />
@@ -26,14 +27,14 @@ const App = () => {
             <Route path="/sessions" exact component={Sessions} />
             <Route path="/sponsors" exact component={Sponsors} />
           </Switch>
-            </Content>
-            <FooterWrapper>
-                <Footer />
-            </FooterWrapper>
-        </Container>
-      </Router>
-    );
-}
+        </Content>
+        <FooterWrapper>
+          <Footer />
+        </FooterWrapper>
+      </Container>
+    </Router>
+  );
+};
 
 export default App;
 
@@ -45,7 +46,7 @@ const Container = styled.div`
   flex-direction: column;
 `;
 const Content = styled.div`
-   flex: 1 0 auto;
+  flex: 1 0 auto;
 `;
 const FooterWrapper = styled.div`
   flex-shrink: 0;
