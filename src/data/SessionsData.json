@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "speaker": "Speaker 1",
+    "title": "Things about stuff",
+    "date": "10.6.2019",
+    "time": "",
+    "location": "",
+    "summary": ""
+  },
+  {
+    "id": 2,
+    "speaker": "Speaker 2",
+    "title": "Stuff and stuff",
+    "date": "",
+    "time": "",
+    "location": "",
+    "summary": ""
+  }
+]

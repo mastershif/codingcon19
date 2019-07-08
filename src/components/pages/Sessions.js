@@ -1,11 +1,14 @@
-import React from 'react';
+import React from "react";
+import SessionList from "../common/SessionList";
+import PageTitle from "../common/PageTitle";
 
 const Sessions = () => {
-    return (
-        <div>
-            <h1>Sessions</h1>
-        </div>
-    );
+  return (
+    <>
+      <PageTitle title="Sessions" />
+      <SessionList />
+    </>
+  );
 };
 
 export default Sessions;
