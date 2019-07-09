@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import banner from "../images/banner4.png";
+import banner from "../images/banner1.png";
 
 class Navbar extends Component {
   render() {
