@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
+import PageTitle from "../common/PageTitle";
 
 const Schedule = () => {
-    return (
-        <div>
-            <h1>Schedule</h1>
-        </div>
-    );
+  return (
+    <>
+      <PageTitle title="Schedule" />
+    </>
+  );
 };
 
 export default Schedule;

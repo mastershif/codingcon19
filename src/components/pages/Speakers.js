@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
+import PageTitle from "../common/PageTitle";
 
 const Speakers = () => {
-    return (
-        <div>
-            <h1>Speakers</h1>
-        </div>
-    );
+  return (
+    <>
+      <PageTitle title="Speakers" />
+    </>
+  );
 };
 
 export default Speakers;

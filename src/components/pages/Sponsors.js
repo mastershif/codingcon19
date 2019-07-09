@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
+import PageTitle from "../common/PageTitle";
 
 const Sponsors = () => {
-    return (
-        <div>
-            <h1>Sponsors</h1>
-        </div>
-    );
+  return (
+    <>
+      <PageTitle title="Sponsors" />
+    </>
+  );
 };
 
 export default Sponsors;
